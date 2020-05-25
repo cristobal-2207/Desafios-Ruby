@@ -21,13 +21,13 @@ valor2 = ARGV[1].to_i
 valor3 = ARGV[2].to_i
 
 #Secuencia
-if valor1>valor2 && valor2>valor3
+if valor1>valor2 && valor1>valor3
     puts "#{valor1}"
 
 elsif valor1<valor2 && valor2>valor3
     puts "#{valor2}"
 
-elsif valor1<valor2 && valor2<valor3
+elsif valor1<valor3 && valor2<valor3
     puts "#{valor3}"
 
 elsif valor1>valor2 && valor1==valor3
