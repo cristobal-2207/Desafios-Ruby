@@ -22,11 +22,10 @@ Utilizando ARGV en lugar de gets:
 
 #Datos a considerar
 pv                      = ARGV[0].to_i
-usuariosAñoTotal        = ARGV[1].to_i
+usuariosAñoComunes      = ARGV[1].to_i
 usuariosAñoPremium      = ARGV[2].to_i
-usuriosAñoGratuitos     = ARGV[3].to_i
-gastosAño               = ARGV[4].to_i
-utilidades              = (pv*2*usuariosAñoPremium-gastosAño).to_i
+gastosAño               = ARGV[3].to_i
+utilidades              = (pv*(usuariosAñoComunes + usuariosAñoPremium*2)-gastosAño).to_i
 menosImpuestos          = (utilidades*0.65).to_i
 
 #A partir de las utilidades
