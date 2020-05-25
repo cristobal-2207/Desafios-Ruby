@@ -28,7 +28,7 @@ Se evaluará el output, por lo que tiene que ser idéntico al de los ejemplos da
 #Al final, solo necesitas dos variables, lo que el jugador ingresa y el random que se obtiene del pc.
 
 #Datos
-jugador = ARGV[0]
+jugador = ARGV[0].downcase
 pc      = rand(0..2)
 
 # 0=piedra , 1=papel, 2=tijera
