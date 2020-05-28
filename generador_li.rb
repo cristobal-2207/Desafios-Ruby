@@ -4,7 +4,7 @@ i     = 0
 
 while i < items
     i    +=1
-    html += "\t<li> #{i} <li/>\n"
+    html += "\t<li> #{i} </li>\n"
 end
 
 html     +="</ul>"
